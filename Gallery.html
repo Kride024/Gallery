@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Gallery</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+body{
+    height:100vh;
+    display:grid;
+    place-items: center;
+}
+.container-img{
+    height:500px;
+    width:1000px;;
+    border-radius:1rem;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image:url("pic1.jpg");
+    animation:gallery 7s linear infinite;
+}
+@keyframes gallery{
+    0%{
+        background-image:url("pic1.jpg");
+    }
+    20%{
+        background-image: url("pic7.jpg");
+    }
+    40%{background-image: url("pic2.jpg");
+}
+60%{
+    background-image: url("pic3.jpg");
+}
+80%{
+    background-image: url("pic1.jpg");
+}
+100%{
+    background-image: url("pic4.jpg");
+}
+
+}
+        </style>
+    </head>
+    <body>
+        <div class="container-img"></div>
+    </body>
+</html>
